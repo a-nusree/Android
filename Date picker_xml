@@ -1,0 +1,39 @@
+
+10.Date Time Picker (Write a Program to select current system time using date time picker)
+
+activity_main.xml
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:orientation="vertical"
+ tools:context="dcs.nmsm.datetimepicker.MainActivity" >
+
+ <EditText
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:id="@+id/in_date"
+ android:inputType="date" />
+
+ <Button
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="right"
+ android:text="Select Date"
+ android:id="@+id/btn_date" />
+
+ <EditText
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:inputType="time"
+ android:id="@+id/in_time" />
+
+ <Button
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="right"
+ android:text="Select Time"
+ android:id="@+id/btn_time" />
+
+</LinearLayout>
