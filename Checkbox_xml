@@ -1,0 +1,60 @@
+9.Check box (Write a Program to check the items listed)
+
+activity_main.xml
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:tools="http://schemas.android.com/tools"
+ 
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:orientation="vertical"
+ tools:context="dcs.nmsm.checkbox.MainActivity"
+ android:paddingLeft="20sp"
+ android:paddingTop="20sp">
+
+<TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Malayalam" />
+
+ <CheckBox
+ android:id="@+id/chkMalRead"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Read" />
+
+ <CheckBox
+ android:id="@+id/chkMalWrite"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Write" />
+
+ <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="English" />
+
+ <CheckBox
+ android:id="@+id/chkEngRead"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Read" />
+
+ <CheckBox
+ android:id="@+id/chkEngWrite"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Write" />
+
+ <Button
+ android:id="@+id/btn"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Click"/>
+
+ <TextView
+ android:id="@+id/res"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="" />
+</LinearLayout>
