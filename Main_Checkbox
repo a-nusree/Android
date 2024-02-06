@@ -1,0 +1,53 @@
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.TextView;
+public class MainActivity extends Activity {
+CheckBox mr,mw,er,ew;
+Button b;
+TextView res;
+String Summary;
+ @Override
+ protected void onCreate(Bundle savedInstanceState) {
+ super.onCreate(savedInstanceState);
+ setContentView(R.layout.activity_main);
+ 
+ mr=(CheckBox)findViewById(R.id.chkMalRead);
+ mw=(CheckBox)findViewById(R.id.chkMalWrite);
+ er=(CheckBox)findViewById(R.id.chkEngRead);
+ ew=(CheckBox)findViewById(R.id.chkEngWrite);
+ res=(TextView)findViewById(R.id.res);
+ b=(Button)findViewById(R.id.btn);
+ b.setOnClickListener(new OnClickListener() {
+@Override
+public void onClick(View arg0) {
+Summary="";
+if(mr.isChecked())
+{
+Summary+="Read Malayalam,";
+}
+if(mw.isChecked())
+{
+Summary+="Write Malayalam,";
+}
+if(er.isChecked())
+{
+Summary+="Read English,";
+}
+if(ew.isChecked())
+{
+Summary+="Write English";
+}
+if(Summary.length()<10)
+res.setText("You are an illiterate " );
+else
+res.setText("You can " + Summary);
+}
+}); 
+ 
+ }
+ 
+}
